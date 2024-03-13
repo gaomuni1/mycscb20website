@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>About the Course</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+  <div class="schedule-header-container">
+    <h2>Course Administration</h2>
+    <div class="info-container">
+      <div class="week-item"><strong>Instructor:</strong> Dr. Purva R. Gawde</div>
+      <div class="week-item"><strong>e-mail:</strong> <a href="mailto:purva.gawde@utoronto.ca" class="email-link">purva.gawde@utoronto.ca</a></div>
+      <div class="week-item"><strong>Piazza Link:</strong> <a href="https://piazza.com/utoronto.ca/winter2024/cscb20h3s" target="_blank" class="email-link">Piazza</a></div>
+      <div class="week-item"><strong>Lecture:</strong> Monday 9 to 11</div>
+      <div class="week-item"><strong>Note:</strong> Lectures in-person will not be recorded.</div>
+      <div class="week-item"><strong>Office Hours:</strong> Tuesday 12 to 1 IC 484</div>
+    </div>
+  </div>
+
+  <div class="title-container">
+    <h2>Lecture and Tutorial Schedule</h2>
+    <div class="schedule-row header">
+        <div class="schedule-cell">Activity</div>
+        <div class="schedule-cell">Time</div>
+        <div class="schedule-cell">Location</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">LEC 01 (In Person)</div>
+        <div class="schedule-cell">Monday 9:00AM - 11:00AM</div>
+        <div class="schedule-cell">SW 319</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">TUT 0001 (In Person)</div>
+        <div class="schedule-cell">Monday 12:00PM - 1:00PM</div>
+        <div class="schedule-cell">BV 473</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">TUT 0002 (In Person)</div>
+        <div class="schedule-cell">Wednesday 11:00AM - 12:00PM</div>
+        <div class="schedule-cell">BV 473</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">TUT 0003 (In Person)</div>
+        <div class="schedule-cell">Wednesday 2:00PM - 3:00PM</div>
+        <div class="schedule-cell">BV 473</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">TUT 0005 (In Person)</div>
+        <div class="schedule-cell">Friday 10:00AM - 11:00AM</div>
+        <div class="schedule-cell">BV 473</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">TUT 0006 (In Person)</div>
+        <div class="schedule-cell">Friday 1:00PM - 2:00PM</div>
+        <div class="schedule-cell">BV 473</div>
+    </div>
+  </div>
+
+  {% endblock content %}
+</body>
+</html>

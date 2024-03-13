@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>CourseTeam</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+
+<div class="schedule-header-container">
+    <h1 class="schedule-header">Office Hours</h1> 
+</div>
+
+<div class="title-container">
+    <div class="schedule-row header">
+        <div class="schedule-cell">Instructor/TA</div>
+        <div class="schedule-cell">Time</div>
+        <div class="schedule-cell">Location</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"> Purva Gawde</div>
+        <div class="schedule-cell">Tuesday 12:00 to 1:00</div>
+        <div class="schedule-cell"> IC 484 </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"> Pourya Moghadam</div>
+        <div class="schedule-cell">Tuesday 12:00 to 1:00</div>
+        <div class="schedule-cell"> IC 484 </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">Joshua Concon </div>
+        <div class="schedule-cell">Monday 11:00 to 12:00</div>
+        <div class="schedule-cell"> IC 402 </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell">Danny Chen </div>
+        <div class="schedule-cell">Wednesday 3:00 to 4:00</div>
+        <div class="schedule-cell"> IC 402 </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"> Nisha Rajendran</div>
+        <div class="schedule-cell">Wednesday 10:00 to 11:00</div>
+        <div class="schedule-cell"> IC 402 </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"> Nisha Rajendran</div>
+        <div class="schedule-cell">Friday 11:00 to 12:00</div>
+        <div class="schedule-cell"> IC 402 </div>
+    </div>
+
+    
+   
+
+
+
+
+
+
+{% endblock content %}
+</body>
+</html>
+    

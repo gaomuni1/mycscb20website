@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>CSCB20 - Introduction to Databases and Web Applications</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  {% extends "template.html" %}
+  
+  {% block content %}
+  <div class="course-header">
+    <h2 class="course-title">CSCB20 - Introduction to Databases and Web Applications</h2>
+    <p class="course-description">
+      A practical introduction to databases and Web app development. Databases: terminology and applications; creating, querying and updating databases; the entity-relationship model for database design. Web documents and applications: static and interactive documents; Web servers and dynamic server-generated content; Web application development and interface with databases.
+    </p>
+    <p class="course-instructor">
+      Instructor: <a href="https://www.utsc.utoronto.ca/cms/purva-gawde-0" target="_blank" class="footer-link">Purva Gawde</a>
+    </p>
+  </div>
+
+  <div class="course-header">
+    <h2 class="course-title">Course Learning Outcomes</h2>
+    <ul class="course-description" >
+      <li>Learn the basic concepts and appreciate the applications of database systems.</li>
+      <li>Be familiar with the relational database theory and be able to write relational algebra.</li>
+      <li>Master the basics of SQL and construct queries using SQL.</li>
+      <li>Comprehend the fundamentals of web application development by building database backend app from scratch, using HTML, JavaScript, micro web frameworks like Python Flask, and other open-source tools.</li>
+    </ul>
+  </div>
+
+  
+    
+  {% endblock %}
+</body>
+</html>

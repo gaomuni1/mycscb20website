@@ -1,0 +1,523 @@
+
+
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+    text-decoration-color: #add8e6; 
+  }
+  
+  /* css for about.html */
+  .email-link {
+    color: #007bff; 
+    text-decoration: none; 
+    position: relative; 
+    transition: color 0.3s ease; 
+  }
+
+  /* css for about.html */
+  .email-link:hover {
+    color: #0056b3; 
+  }
+
+  /* css for about.html */
+  .email-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-image: linear-gradient(to right, transparent, #007bff, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+  }
+
+  /* css for about.html */
+  .email-link:hover::after {
+    opacity: 1;
+  }
+
+
+/* css for feedbacks.html */
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 2rem;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    color: white;
+    text-align: center; 
+  }
+  
+  /* css for feedbacks.html */
+.form-field {
+    margin-bottom: 1rem;
+  }
+  
+/* css for feedbacks.html */
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+.form-field input[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+/* css for feedbacks.html */
+.form-field input[type="submit"]:hover {
+    background-color: #c0392b;
+  }
+  
+  
+   /* css for home.html */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; 
+  }
+  /* css for home.html */
+  .course-header {
+    background-color: #e9f6fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+  }
+
+  /* css for home.html */
+  .course-title {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  /* css for home.html */
+  .course-description {
+    color: #666;
+    font-size: 1em;
+  }
+
+  /* css for home.html */
+  .course-instructor {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  /* css for home.html */
+  .course-instructor a {
+    color: #0000EE;
+    text-decoration: none; 
+  }
+
+  /* css for home.html */
+  .course-instructor a:hover {
+    text-decoration: underline;
+  }
+
+   /* css for confirmation.html */
+  .confirmation-box {
+    text-align: center;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+    max-width: 600px; 
+    margin: auto; 
+}
+
+/* css for confirmation.html */
+.confirmation-icon {
+    background: #e8f5e9;
+    color: #4caf50;
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem; 
+    font-size: 4rem;
+}
+
+/* css for confirmation.html */
+.confirmation-title {
+    font-size: 2rem; 
+    margin-bottom: 1.5rem;
+}
+
+/* css for confirmation.html */
+.confirmation-link {
+    font-size: 1rem; 
+    padding: 0.5rem 1rem;
+}
+
+/* css for confirmation.html */
+.confirmation-link:hover {
+    text-decoration: underline;
+}
+
+/* css for confirmation.html */
+.confirmation-button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* css for confirmation.html */
+.confirmation-button:hover {
+    background: #43a047;
+}
+
+
+
+
+/* css for syllabus.html */
+.syllabus-link {
+    color: black; 
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; 
+  }
+  
+  /* css for syllabus.html */
+.syllabus-link:hover {
+    color: grey; 
+  }
+  
+/* css for syllabus.html */
+.syllabus-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: blue;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+/* css for syllabus.html */
+.syllabus-link:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+
+ /* css for about.html */
+.course-administration,
+.schedule-container {
+    margin-bottom: 20px;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+}
+
+ /* css for about.html */
+.schedule-row {
+    display: flex;
+}
+ /* css for about.html */
+.schedule-row.header {
+    background-color: #333;
+    color: #fff;
+}
+ /* css for about.html */
+.schedule-cell {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ddd; 
+}
+
+
+@media (max-width: 768px) {
+    .schedule-row,
+    .schedule-cell {
+        flex-direction: column;
+    }
+}
+
+
+/* css for about.html */
+.title-container {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+
+
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-row {
+    display: flex;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.schedule-row.header {
+    background-color: #333;
+    color: white;
+}
+
+.schedule-cell {
+    flex: 1;
+    padding: 5px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+/* css for about.html */
+.week-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+    margin: 0;
+}
+/* css for about.html and syllabus.html */
+.week-separator {
+    flex-grow: 1;
+  }
+/* css for about.html */
+.week-item:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+/* css for about.html */
+.week-item:nth-child(even) {
+    background-color: #ffffff;
+  }
+/* css for about.html */
+.week-item:hover {
+    background-color: #e9f6fc;
+  }
+ 
+/* css for syllabus.html */
+.week-title {
+    font-weight: bold;
+  }
+
+/* css for syllabus.html */
+.week-topic {
+    flex-grow: 1;
+  }
+
+/* css for about.html and syllabus.html */
+.schedule-header-container {
+    text-align: center; 
+    background-color: #e9f6fc;
+    padding: 20px 0; 
+  }
+
+/* css for syllabus.html */
+.schedule-header {
+    margin: 0; 
+    color: black;
+    font-size: 2em;
+  }
+  
+/* css for syllabus.html */
+.schedule-subtitle, .schedule-note {
+    margin: 0; 
+    color:black; 
+  }
+  
+
+  /* css for calender.html */
+.calendar-container {
+    background-color: #ADD8E6; 
+    color: black; 
+    padding: 20px;
+  }
+
+
+
+  /* css for template.html*/
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* css for template.html*/
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+  }
+  
+  /* css for template.html*/
+  nav ul {
+    background-color: #333;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* css for template.html*/
+  nav ul li {
+    display: inline;
+  }
+
+  /* css for template.html*/
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+  }
+
+  /* css for template.html*/
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  
+
+  
+  /* css for template.html*/
+  header .container h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* css for template.html*/
+  .container p {
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* css for template.html*/
+  header, footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+  }
+
+  /* css for template.html*/
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  /* css for template.html*/
+  footer p {
+    margin: 0;
+  }
+  
+/* CSS for template.html */
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-link:hover {
+    color: #ADD8E6;
+  }
+  
+  .footer-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    background: transparent;
+    height: 2px;
+    transition: all 0.3s ease-in-out; /* Simplified to 'all' to include both 'right' and 'background-color' transitions */
+  }
+  
+  .footer-link:hover::after {
+    right: 0; /* Set the 'right' value after entering the hover state */
+    background: #ADD8E6;
+  }
+  
+  
+  /* 在宽屏幕上调整布局 */
+  @media(min-width: 768px) {
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  /* 在平板电脑上调整布局 */
+  @media(min-width: 1025px) {
+    .container {
+      width: 60%;
+      margin: auto;
+    }
+  }
+  
+  /* 在手机上调整布局 */
+  @media(max-width: 767px) {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+  
+  /* css for template.html*/
+  nav ul li {
+      display: inline;
+    }
+  /* css for template.html*/
+  header, footer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+body, html {
+        background-color: #ADD8E6;
+      }
+
+
+.iframe-container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 75vh; 
+      }
+      
+   
+
+
+      
+
+
+

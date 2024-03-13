@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Flask Parent Template</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="{{ url_for('home') }}">HOME</a></li>
+      <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+      <li><a href="{{ url_for('course_team') }}">COURSE TEAM</a></li>
+      <li><a href="{{ url_for('news') }}">NEWS</a></li>
+      <li><a href="{{ url_for('labs') }}">LABS/TUTS</a></li>
+      <li><a href="{{ url_for('assignments') }}">ASSIGNMENTS</a></li>
+      <li><a href="{{ url_for('syllabus') }}">SYLLABUS</a></li>
+      <li><a href="{{ url_for('piazza') }}">PIAZZA</a></li>
+      <li><a href="{{ url_for('markus') }}">MARKUS</a></li>
+      <li><a href="{{ url_for('cdf_labs') }}">CDF LABS</a></li>
+      <li><a href="{{ url_for('calendar') }}">Calendar</a></li>
+      <li><a href="{{ url_for('feedbacks') }}">FEEDBACK</a></li>
+    </ul>
+  </nav>
+  <header>
+    {% if request.path == url_for('home') %}
+    <div class="container">
+      <h1 class="logo">CSCB20 - Introduction to Database</h1>
+    </div>
+    {% endif %}
+  </header>
+
+  {% block content %}
+  {% endblock %}
+  
+  <footer>
+    <p>
+      Site designed by David Gao, Alfredo Yu
+    </p>
+    <p>
+      <a href="https://web.cs.toronto.edu/" class="footer-link">Faculty of Computer Science at UofT</a>
+    </p>
+  </footer>
+  
+</body>
+</html>

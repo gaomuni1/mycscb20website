@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+
+<div class="schedule-header-container">
+  <h1 class="schedule-header">Calendar</h1>
+</div>
+ 
+<div class="iframe-container">
+<iframe src="https://calendar.google.com/calendar/embed?src=idqh4jr0qptm8vlvvjhqd24agk%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+{% endblock content %}
+</body>
+</html>

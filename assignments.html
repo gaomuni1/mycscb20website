@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Assignments</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+
+<div class="schedule-header-container">
+    <h1 class="schedule-header">Assignment</h1>
+    <p class="schedule-subtitle">Based on the content of 2-3 weeks, exercise will be posted on Quercus.</p>
+    <p class="schedule-subtitle">The weight of 3 assignments is 33% of final grade</p>
+</div>
+
+<div class="title-container">
+    <div class="schedule-row header">
+        <div class="schedule-cell">Topic</div>
+        <div class="schedule-cell">Weight</div>
+        <div class="schedule-cell">Due Date</div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"><a href="https://www.utsc.utoronto.ca/~bretscher/b20/lectures/w5.pdf" class="syllabus-link"> <b>Assignment 1</b></a> Relational Algebra & SQL</div>
+        <div class="schedule-cell">8%</div>
+        <div class="schedule-cell">Due February 10th @11:59pm (Tentative), Submit to<a href="https://markus148.teach.cs.toronto.edu/2024-01/?locale=en" class="syllabus-link">MarkUs</a> </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"><a href="https://www.utsc.utoronto.ca/~bretscher/b20/lectures/w5.pdf" class="syllabus-link"> <b>Assignment 2</b></a> HTML & CSS</div>
+        <div class="schedule-cell">10%</div>
+        <div class="schedule-cell">Due March 11th @11:59pm (Tentative), Submit to<a href="https://markus148.teach.cs.toronto.edu/2024-01/?locale=en" class="syllabus-link">MarkUs</a> </div>
+    </div>
+    <div class="schedule-row">
+        <div class="schedule-cell"><a href="https://www.utsc.utoronto.ca/~bretscher/b20/lectures/w5.pdf" class="syllabus-link"> <b>Assignment 3</b></a> Web Application & Database</div>
+        <div class="schedule-cell">15%</div>
+        <div class="schedule-cell">Due April 15th @11:59pm (Tentative), Submit to<a href="https://markus148.teach.cs.toronto.edu/2024-01/?locale=en" class="syllabus-link">MarkUs</a> </div>
+    </div>
+
+    
+
+{% endblock content %}
+</body>
+</html>
+    
